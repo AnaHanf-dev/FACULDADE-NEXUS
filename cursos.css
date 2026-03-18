@@ -1,0 +1,92 @@
+#body,html{
+    overflow-x: hidden;
+    font-family: Montserrat;
+}
+
+
+.btn-custom {
+    background-color: #C6A75E !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.btn-custom:hover {
+    background-color: #d9bf81 !important;
+}
+
+.btn-outline-custom {
+    color: #C6A75E;
+    border: 2px solid #C6A75E;
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: #C6A75E;
+    color: #000;
+}
+
+
+.section2{
+    height: 140px;
+}
+
+.pagina{
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 50px rgba(6, 22, 43, 0.4) ;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.azul-navy {
+    background-color: #0b1f3b;
+}
+
+.azul {
+    background-color: #00357a;
+}
+
+.dourado {
+    background-color: #C6A75E;
+}
+
+.cinza {
+    background-color: #E6E9EF;
+}
+
+.branco {
+    background-color: #F8F9FB;
+}
+
+.img_cursos{
+    max-width: 100%;
+    height: auto;
+    border: 3px solid #C6A75E;
+    border-radius: 10px;
+}
+
+.card-curso {
+    position: relative;
+    display: inline-block;
+}
+
+.btnoi {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0b1f3b; 
+    opacity: 0;
+    border-radius: 10px;
+}
+
