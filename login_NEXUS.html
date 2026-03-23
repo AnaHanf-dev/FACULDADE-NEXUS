@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
@@ -29,11 +30,11 @@
                     <p>Login to continue</p>
                     <div class="mb-3 username">
                         <input class="form-control" type="text" placeholder="Username"
-                            aria-label="default input example">
+                            aria-label="default input example" id="username">
                     </div>
                     <div class=" mb-3">
                         <input class="form-control" type="password" placeholder="Password"
-                            aria-label="default input example">
+                            aria-label="default input example" id="password">
                     </div>
 
                     <button type="submit" class="btn login" onclick="abrirAlerta(event)">Submit</button>
@@ -45,25 +46,6 @@
         </div>
 
     </div>
-
-    <script>
-        function abrirAlerta(event) {
-            event.preventDefault(); // 🚫 impede o recarregamento
-
-            Swal.fire({
-                title: "Seja Bem-Vindo!",
-                icon: "success",
-                confirmButtonText: "OK",
-                customClass: {
-                    title: 'meuTitulo'
-                }
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    window.location.href = "menu_nexus.html";
-                }
-            });
-        }
-    </script>
 
 </body>
 

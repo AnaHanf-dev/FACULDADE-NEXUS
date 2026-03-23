@@ -63,23 +63,13 @@
                         <a class="nav-link" href="#Inovação">Consute Valores</a>
                     </li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            + Informações
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Biblical Basis</a></li>
-                            <li><a class="dropdown-item" href="time.html">Our Team</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Foundation</a></li>
-                        </ul>
-                    </li>
 
                     <li class="nav-item">
                         <a class="nav-link" href="#campus">CAMPUS</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#informações">+ Informações</a>
                     </li>
 
                 </ul>
@@ -164,29 +154,6 @@
         </div>
     </div>
 
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-
-            const elementos = document.querySelectorAll("#NEXUS .nexus-text, #NEXUS .students");
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("show");
-                    } else {
-                        entry.target.classList.remove("show");
-                    }
-                });
-            }, {
-                threshold: 0.3
-            });
-
-            elementos.forEach(el => observer.observe(el));
-        });
-    </script>
-
-
     <div class="section2 cinza" id="Inovação">
         <div class="container valores">
             <h3 class="desconto"><b>Mensalidade com Desconto Aplicado</b></h3>
@@ -224,7 +191,7 @@
                     </button>
 
                     <label class="ENEM" style="color: #C6A75E; margin-top: 25px; font-family: 'Montserrat';"
-                        for="prisoma_número" ><b>VALOR COM DESCONTO</b></label>
+                        for="prisoma_número"><b>VALOR COM DESCONTO</b></label>
                     <input type="number" value="0" class="form-control form-control-sm ENEM mb-2" id="Mensalidade">
                 </div>
 
@@ -235,11 +202,127 @@
 
     <div class="section3 dourado" id="campus">
         <div class="">
-                <img src="tourcampus.png" height="540px" style="margin-left: 270px; margin-top: 80px;">
-            </div>
-            <div class="col"></div>
+            <img src="tourcampus.png" height="540px" style="margin-left: 270px; margin-top: 80px;" href="">
+        </div>
+        <div class="col"></div>
 
     </div>
+
+
+    <div class="branco" id="informações">
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-body-tertiary text-muted">
+            <!-- Section: Social media -->
+            <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+                <!-- Right -->
+                <div>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-google"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="" class="me-4 text-reset">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <!-- Right -->
+            </section>
+            <!-- Section: Social media -->
+
+            <!-- Section: Links  -->
+            <section class="informações">
+                <div class="container text-center text-md-start mt-5">
+                    <!-- Grid row -->
+                    <div class="row mt-3">
+                        <div class="col-sm-10 col-md-3 col-lg-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Formas de Entrada
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">ENEM/Vestibular</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Rematrícula</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Nova Graduação</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Bolsas e Financiamento</a>
+                            </p>
+                        </div>
+
+
+                        <div class="col-sm-10 col-md-3 col-lg-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                NEXUS
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Institucional</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Estrutura</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Docentes</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Nossa História</a>
+                            </p>
+                        </div>
+                        
+                        <div class="col-sm-10 col-md-3 col-lg-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">
+                                Inovação
+                            </h6>
+                            <p>
+                                <a href="#!" class="text-reset">Cidades Inteligentes</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Inteligência Artificial</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Software House</a>
+                            </p>
+                            <p>
+                                <a href="#!" class="text-reset">Industria 4.0</a>
+                            </p>
+                        </div>
+        
+                        <div class="col-sm-10 col-md-3 col-lg-3 mx-auto mb-4">
+                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                            <p>Tatuí, SP 10012, BR</p>
+                            <p>faculdade@nexus.com</p>
+                            <p>(15) 99825-0033</p>
+                            <p>(15) 99721-5905</p>
+                        </div>
+                        <!-- Grid column -->
+                    </div>
+                    <!-- Grid row -->
+                </div>
+            </section>
+            <!-- Section: Links  -->
+
+            <!-- Copyright -->
+            <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+                © 2026 Direitos Reservados
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+    </div>
+
+
 </body>
 
 </html>

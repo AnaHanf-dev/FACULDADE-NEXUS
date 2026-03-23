@@ -74,9 +74,17 @@
 .btnoi {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 86%;
     transform: translate(-50%, -50%);
     display: none;
+}
+
+.valor{
+    margin-top: 3px;
+    font-family: Montserrat;
+    color: #E6E9EF;
+    font-size: 115%;
+    text-shadow: 2px 2px 4px rgba(11, 31, 59, 0.8);
 }
 
 .overlay {

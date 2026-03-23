@@ -41,6 +41,7 @@ p {
     border-color: transparent !important;
     border-bottom: 2px solid #C6A75E !important;
     border-radius: 0px !important;
+    color: #fbf6f3 !important;
 }
 
 .form-control:focus {
@@ -77,8 +78,9 @@ p {
     border-color: #011632 !important;
 }
 
-.swal2-title.meuTitulo {
+.meuTitulo {
     font-family: Montserrat, sans-serif !important;
     font-size: 28px !important;
     color: #00357a !important;
 }
+
