@@ -28,7 +28,7 @@ $(document).ready(function () {
         $(".pagina").append(card);
     });
 
-    // EVENTOS DOS FILTROS (todos chamam a mesma função)
+    // EVENTOS DOS FILTROS
     $("#titulo").on("keyup", aplicarFiltros);
     $("#categoria").on("change", aplicarFiltros);
     $(".filtro_valores").on("keyup", aplicarFiltros);
@@ -36,7 +36,7 @@ $(document).ready(function () {
 });
 
 
-// 🔥 FUNÇÃO UNIFICADA DE FILTRO
+
 function aplicarFiltros() {
 
     let texto = $("#titulo").val().toLowerCase().trim();
@@ -54,12 +54,12 @@ function aplicarFiltros() {
         valor = valor.replace('.', '');
         valor = parseFloat(valor.replace(',', '.'));
 
-        // filtros individuais
+        
         let filtroNome = nome.includes(texto);
         let filtroCategoria = (categoriaSelecionada == "0" || categoria == categoriaSelecionada);
         let filtroValor = (valor >= minimo && valor <= maximo);
 
-        // 🔥 TODOS juntos
+        
         if (filtroNome && filtroCategoria && filtroValor) {
             $(this).show();
         } else {
@@ -70,7 +70,7 @@ function aplicarFiltros() {
 }
 
 
-// 🔧 MANTIDO (sem alteração de lógica)
+
 function get_valores() {
 
     let menor = 0.00;
@@ -100,8 +100,6 @@ function get_valores() {
 
 }
 
-
-// 🔧 MANTIDO
 function moeda(a, e, r, t) {
     let n = "",
         h = j = 0,
