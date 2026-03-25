@@ -37,7 +37,7 @@ function abrirAlerta(event) {
         }
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location.href = "menu_nexus.html";
+            window.location.href = "index.html";
         }
     });
 }
