@@ -1,4 +1,5 @@
-#body,html{
+#body,
+html {
     overflow-x: hidden;
     font-family: Montserrat;
 }
@@ -27,14 +28,14 @@
 }
 
 
-.section2{
+.section2 {
     height: 140px;
 }
 
-.pagina{
+.pagina {
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(8px);
-    box-shadow: 0 0 50px rgba(6, 22, 43, 0.4) ;
+    box-shadow: 0 0 50px rgba(6, 22, 43, 0.4);
     border-radius: 50px;
     text-align: center;
 }
@@ -59,7 +60,7 @@
     background-color: #F8F9FB;
 }
 
-.img_cursos{
+.img_cursos {
     max-width: 100%;
     height: auto;
     border: 3px solid #C6A75E;
@@ -74,12 +75,13 @@
 .btnoi {
     position: absolute;
     top: 50%;
-    left: 86%;
+    left: 83%;
     transform: translate(-50%, -50%);
     display: none;
+    max-width: 90%;
 }
 
-.valor{
+.valor {
     margin-top: 3px;
     font-family: Montserrat;
     color: #E6E9EF;
@@ -93,8 +95,54 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0b1f3b; 
+    background-color: #0b1f3b;
     opacity: 0;
     border-radius: 10px;
 }
 
+.btn-responsive {
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.valor {
+    font-size: 100%;
+}
+
+.btnoi .btn,
+.btnoi .valor {
+    white-space: nowrap;
+
+
+}
+
+@media (max-width: 768px) {
+
+    .card-curso:hover .btnoi {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .btnoi h4 {
+        margin: 0;
+        font-size: 90%;
+    }
+
+    .btnoi .btn {
+        font-size: 12px;
+        padding: 4px 8px;
+    }
+
+    .btnoi .btn,
+    .btnoi .valor {
+        white-space: nowrap;
+
+
+    }
+}
