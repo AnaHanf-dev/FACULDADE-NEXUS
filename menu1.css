@@ -221,27 +221,24 @@
     font-family: Montserrat;
 }
 
+#nav-responsiva{
+    display: flex; 
+    justify-content: flex-start;
+}
+
 
 
 
 @media (max-width: 768px){
 
-    .container{
-        padding: 20px 0;
+    #body,html{
+        overflow-x: hidden;
     }
 
-    .section1 , .section2{
-        min-width: 1000vw;
-        min-height: 100vw;
-    }
-
-    #carousel-nexus .carousel-inner, #carousel-nexus .carousel-item  {
-        height: 60vh;
-        object-fit: cover;
-    }
-
-    .carousel-item .carousel-img {
-        height: 100%;
-        width: 100%;
+    .nav-respon {
+        flex-grow: 0 !important;
+        flex-basis: auto !important;
+        max-width: 200px;
+        
     }
 }
